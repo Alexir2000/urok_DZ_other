@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+Страница Аккаунта
+{% endblock %}
+
+{% block content %}
+<h1>Это страница вашего аккаунта ,которая видна только при входе в систему</h1>
+ <br>
+<p>
+    <a href="{{ url_for('edit_profile') }}">Изменить данные аккаунта</a>
+</p>
+ <br>
+{% endblock %}

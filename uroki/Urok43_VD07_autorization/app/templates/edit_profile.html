@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Редактирование профиля</h1>
+<p>
+    <a href="{{ url_for('account') }}">Вернуться на страницу Аккаунта</a>
+</p>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.username.label }}<br>
+        {{ form.username(value=current_user.username) }}  <br> <br>
+    </div>
+    <div>
+        {{ form.email.label }}<br>
+        {{ form.email(value=current_user.email) }}  <br> <br>
+    </div>
+    <div>
+        {{ form.password.label }}<br>
+        {{ form.password }}  <br> <br>
+    </div>
+    <div>
+        {{ form.confirm_password.label }}<br>
+        {{ form.confirm_password }}  <br> <br>
+    </div>
+    <div>
+        {{ form.submit }}
+    </div>
+</form>
+{% endblock %}
