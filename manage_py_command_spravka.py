@@ -1,4 +1,12 @@
 """
+<<<<<<< HEAD
+ вот список основных команд для управления проектом в Django:
+
+0. **django-admin startproject <projectname>**
+   - Создание нового проекта Django с указанным именем.
+
+=======
+>>>>>>> origin/main
 1. **`python manage.py runserver`**
    - Запускает встроенный сервер разработки.
    - Пример: `python manage.py runserver 8000`
@@ -9,7 +17,7 @@
 
 3. **`python manage.py migrate`**
    - Применяет и управляет миграциями для синхронизации базы данных с моделями.
-   - Пример: `python.manage.py migrate`
+   - Пример: `python manage.py migrate`
 
 4. **`python manage.py createsuperuser`**
    - Создает нового суперпользователя для административного интерфейса.
